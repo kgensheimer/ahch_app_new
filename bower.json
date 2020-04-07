@@ -1,0 +1,22 @@
+{
+  "name": "ahch_ims",
+  "description": "Senior Design Project: Information Management System for Audrey Hepburn's Children's Hospital",
+  "main": "app.js",
+  "authors": [
+    "Kyle Gensheimer"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kgensheimer/ahch_app_new",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "fullcalendar": "^4.4.0"
+  }
+}

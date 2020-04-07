@@ -1,0 +1,30 @@
+{
+  "name": "ahch_ims",
+  "version": "1.0.0",
+  "description": "Senior Design Project: Information Management System for Audrey Hepburn's Children's Hospital",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "bower": "bower",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgensheimer/ahch_app_new.git"
+  },
+  "author": "Kyle Gensheimer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kgensheimer/ahch_app_new/issues"
+  },
+  "homepage": "https://github.com/kgensheimer/ahch_app_new#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8"
+  }
+}

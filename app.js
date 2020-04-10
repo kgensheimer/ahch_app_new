@@ -1,5 +1,10 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const mongoose = require('mongoose');
+
+// Connect to Database
+mongoose.connect('mongodb://localhost');
+let db = mongoose.connection;
 
 
 // Initialize App

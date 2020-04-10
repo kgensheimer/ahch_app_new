@@ -49,7 +49,7 @@ tasks/; contains any setup scripts like seed.js to seed the database
 
 * **Kyle Gensheimer** 
 
-See also the list of [contributors](https://github.com/kgensheimer/ahch_app/graphs/contributors)
+See also the list of [contributors](https://github.com/kgensheimer/ahch_app_new/graphs/contributors)
 
 ## License
 

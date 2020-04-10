@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Family Patient Schema
 let familyPatientSchema = mongoose.Schema({
-    PatientID: {
+    patientID: {
         type: Number
     },
-    FamilyID: {
+    familyID: {
         type: Number
     }
 

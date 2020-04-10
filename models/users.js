@@ -1,42 +1,42 @@
 let mongoose = require('mongoose');
 
-// Users Schema
-let usersSchema = mongoose.Schema({
-    UserID: {
+// User Schema
+let userSchema = mongoose.Schema({
+    userID: {
         type: Number
     },
-    Username: {
+    username: {
         type: String
     },
-    FirstName: {
+    firstName: {
         type: String
     },
-    MI: {
+    middleInitial: {
         type: String
     },
-    LastName: {
+    lastName: {
         type: String
     },
-    Password: {
+    password: {
         type: String
     },
-    AuthType: {
+    authType: {
         type: String
     },
-    UserGUID: {
+    userGUID: {
         type: String
     },
-    OrganizationID: {
+    organizationID: {
         type: Number
     },
-    Notes: {
+    notes: {
         type: String
     },
-    Role: {
+    role: {
         type: String
     }
 
 
 });
 
-let Users = module.exports = mongoose.model('Users', usersSchema);
+let User = module.exports = mongoose.model('User', userSchema);

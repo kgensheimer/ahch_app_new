@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Service Schedule Status Schema
 let serviceScheduleStatusSchema = mongoose.Schema({
-    ServiceScheduleStatusID: {
+    serviceScheduleStatusID: {
         type: Number
     },
-    Status: {
+    status: {
         type: String
     }
 

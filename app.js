@@ -2,13 +2,28 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 
+
 // Connect to Database
-mongoose.connect('mongodb://localhost');
+const mongoDB = 'mongodb://localhost:27017/ahch';
+mongoose.connect(mongoDB, { useNewUrlParser: true });
+
+// Get the Default Connection
 let db = mongoose.connection;
+
+// Check for Connection
+db.once('open', () => {
+	console.log('Connected to MongoDB');
+});
+
+// Check for DB errors
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
 // Initialize App
 const app = express();
+
+// Bring in Models
+let 
 
 // Set Static Public Folder
 const static = express.static(__dirname + '/public');

@@ -1,21 +1,21 @@
 let mongoose = require('mongoose');
 
 // States Schema
-let statesSchema = mongoose.Schema({
-    StateID: {
+let stateSchema = mongoose.Schema({
+    stateID: {
         type: Number
     },
-    StateCode: {
+    stateCode: {
         type: String
     },
-    StateDesc: {
+    stateDesc: {
         type: String
     },
-    Country: {
+    country: {
         type: String
     }
 
 
 });
 
-let States = module.exports = mongoose.model('States', statesSchema);
+let State = module.exports = mongoose.model('States', stateSchema);

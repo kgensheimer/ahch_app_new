@@ -2,22 +2,22 @@ let mongoose = require('mongoose');
 
 // Service Schedule History Schema
 let serviceScheduleHistorySchema = mongoose.Schema({
-    HistoryID: {
+    historyID: {
         type: Number
     },
-    ServiceScheduleID: {
+    serviceScheduleID: {
         type: Number
     },
-    SubmittedDate: {
+    submittedDate: {
         type: Date
     },
-    StatusID: {
+    statusID: {
         type: Number
     },
-    ScheduleDate: {
+    scheduleDate: {
         type: Date
     },
-    StatusChangeDate: {
+    statusChangeDate: {
         type: Date
     }
 

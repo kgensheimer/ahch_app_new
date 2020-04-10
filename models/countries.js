@@ -2,13 +2,13 @@ let mongoose = require('mongoose');
 
 // Countries Schema
 let countriesSchema = mongoose.Schema({
-    CountryID: {
+    countryID: {
         type: Number
     },
-    CountryCode: {
+    countryCode: {
         type: String
     },
-    CountryDesc: {
+    countryDesc: {
         type: String
     }
 

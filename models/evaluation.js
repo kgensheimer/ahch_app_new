@@ -2,28 +2,28 @@ let mongoose = require('mongoose');
 
 // Evaluation Schema
 let evaluationSchema = mongoose.Schema({
-    EvaluationID: {
+    evaluationID: {
         type: Number
     },
-    CaseID: {
+    caseID: {
         type: Number
     },
-    PatientID: {
+    patientID: {
         type: Number
     },
-    EvalType: {
+    evalType: {
         type: String
     },
-    EvalDate: {
+    evalDate: {
         type: Date
     },
-    FirstName: {
+    firstName: {
         type: String
     },
-    MI: {
+    middleInitial: {
         type: String
     },
-    LastName: {
+    lastName: {
         type: String
     }
 

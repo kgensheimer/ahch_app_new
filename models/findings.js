@@ -2,20 +2,19 @@ let mongoose = require('mongoose');
 
 // Findings Schema
 let findingsSchema = mongoose.Schema({
-    FindingID: {
+    findingID: {
         type: Number
     },
-    Category: {
+    category: {
         type: String
     },
-
-    Finding: {
+    finding: {
         type: String
     },
-    Gender: {
+    gender: {
         type: String
     },
-    Order: {
+    order: {
         type: Number
     }
 

@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 
-// Languages Schema
-let languagesSchema = mongoose.Schema({
+// Language Schema
+let languageSchema = mongoose.Schema({
     rowID: {
         type: Number
     },
@@ -14,4 +14,4 @@ let languagesSchema = mongoose.Schema({
 
 });
 
-let Languages = module.exports = mongoose.model('Languages', languagesSchema);
+let Language = module.exports = mongoose.model('Language', languageSchema);

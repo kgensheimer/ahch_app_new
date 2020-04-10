@@ -1,18 +1,18 @@
 let mongoose = require('mongoose');
 
-// Tests Schema
-let testsSchema = mongoose.Schema({
-    TestID: {
+// Test Schema
+let testSchema = mongoose.Schema({
+    testID: {
         type: Number
     },
-    Category: {
+    category: {
         type: String
     },
-    Test: {
+    test: {
         type: String
     }
 
 
 });
 
-let Tests = module.exports = mongoose.model('Tests', testsSchema);
+let Test = module.exports = mongoose.model('Test', testSchema);

@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Exam Position Schema
 let examPositionSchema = mongoose.Schema({
-    ExamPositionID: {
+    examPositionID: {
         type: Number
     },
-    ExamPosition: {
+    examPosition: {
         type: String
     }
 

@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Tanner Stage Schema
 let tannerStageSchema = mongoose.Schema({
-    TannerStageID: {
+    tannerStageID: {
         type: Number
     },
-    TannerStage: {
+    tannerStage: {
         type: String
     }
 

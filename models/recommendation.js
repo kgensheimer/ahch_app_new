@@ -2,37 +2,37 @@ let mongoose = require('mongoose');
 
 // Recommendation Schema
 let recommendationSchema = mongoose.Schema({
-    RecommendationID: {
+    recommendationID: {
         type: Number
     },
-    CaseID: {
+    caseID: {
         type: Number
     },
-    PatientID: {
+    patientID: {
         type: Number
     },
-    CreatedDate: {
+    createdDate: {
         type: Date
     },
-    TypeName: {
+    typeName: {
         type: String
     },
-    EvaluationDate: {
+    evaluationDate: {
         type: Date
     },
-    ReferralReason: {
+    referralReason: {
         type: String
     },
-    FindingComments: {
+    findingComments: {
         type: String
     },
-    RiskFactors: {
+    riskFactors: {
         type: String
     },
-    RecommendationComments: {
+    recommendationComments: {
         type: String
     },
-    Comments: {
+    comments: {
         type: String
     }
 

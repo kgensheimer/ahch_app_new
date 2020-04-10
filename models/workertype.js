@@ -2,13 +2,13 @@ let mongoose = require('mongoose');
 
 // Worker Type Schema
 let workerTypeSchema = mongoose.Schema({
-    WorkerTypeID: {
+    workerTypeID: {
         type: Number
     },
-    TypeName: {
+    typeName: {
         type: String
     },
-    Description: {
+    description: {
         type: String
     }
 

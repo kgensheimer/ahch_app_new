@@ -2,19 +2,19 @@ let mongoose = require('mongoose');
 
 // Counties Schema
 let countiesSchema = mongoose.Schema({
-    CountyID: {
+    countyID: {
         type: Number
     },
-    CountyCode: {
+    countyCode: {
         type: String
     },
-    CountyDesc: {
+    countyDesc: {
         type: String
     },
-    StateCode: {
+    stateCode: {
         type: String
     },
-    Order: {
+    order: {
         type: Number
     }
 

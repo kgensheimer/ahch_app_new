@@ -2,16 +2,16 @@ let mongoose = require('mongoose');
 
 // Site Service Category Schema
 let siteServiceCategorySchema = mongoose.Schema({
-    CategoryID: {
+    categoryID: {
         type: Number
     },
-    Category: {
+    category: {
         type: String
     },
-    CategoryDesc: {
+    categoryDesc: {
         type: String
     },
-    Order: {
+    order: {
         type: Number
     }
 

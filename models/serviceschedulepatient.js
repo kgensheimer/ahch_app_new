@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Service Schedule Patient Schema
 let serviceSchedulePatientSchema = mongoose.Schema({
-    ServiceScheduleID: {
+    serviceScheduleID: {
         type: Number
     },
-    PatientID: {
+    patientID: {
         type: Number
     }
 

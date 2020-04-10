@@ -2,19 +2,19 @@ let mongoose = require('mongoose');
 
 // Family Schema
 let familySchema = mongoose.Schema({
-    FamilyID: {
+    familyID: {
         type: Number
     },
-    FirstName: {
+    firstName: {
         type: String
     },
-    MI: {
+    middleInitial: {
         type: String
     },
-    LastName: {
+    lastName: {
         type: String
     },
-    RelationshipID: {
+    relationshipID: {
         type: Number
     },
     SSN: {
@@ -23,49 +23,49 @@ let familySchema = mongoose.Schema({
     DOB: {
         type: Date
     },
-    Gender: {
+    gender: {
         type: String
     },
-    LegalStatus: {
+    legalStatus: {
         type: String
     },
-    PrimaryLanguageID: {
+    primaryLanguageID: {
         type: Number
     },
-    Address: {
+    address: {
         type: String
     },
-    Address2: {
+    address2: {
         type: String
     },
-    City: {
+    city: {
         type: String
     },
-    StateID: {
+    stateID: {
         type: Number
     },
-    ZipCode: {
+    zipCode: {
         type: String
     },
-    CountyID: {
+    countyID: {
         type: Number
     },
-    CountryID: {
+    countryID: {
         type: Number
     },
-    Phone: {
+    phone: {
         type: String
     },
-    Phone2: {
+    phone2: {
         type: String
     },
-    Mobile: {
+    mobile: {
         type: String
     },
-    Email: {
+    email: {
         type: String
     },
-    SpecialNeeds: {
+    specialNeeds: {
         type: String
     }
 

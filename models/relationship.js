@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Relationship Schema
 let relationshipSchema = mongoose.Schema({
-    RelationshipID: {
+    relationshipID: {
         type: Number
     },
-    RelationshipType: {
+    relationshipType: {
         type: String
     }
 

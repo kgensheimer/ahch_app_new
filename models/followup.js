@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 // Follow Up Schema
 let followUpSchema = mongoose.Schema({
-    FollowUpID: {
+    followUpID: {
         type: Number
     },
-    Range: {
+    range: {
         type: String
     }
 

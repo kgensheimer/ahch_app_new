@@ -23,18 +23,33 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 const app = express();
 
 // Bring in Models
-let 
+
+
 
 // Set Static Public Folder
 const static = express.static(__dirname + '/public');
 app.use('/public', static);
+
+// Include Bootstrap from node_modules
+const bootstrap = express.static(__dirname + '/node_modules/bootstrap');
+app.use('/bootstrap', bootstrap);
+
+// Include Fullcalendar from node_modules
+const fullcalendar = express.static(__dirname + '/node_modules/@fullcalendar');
+app.use('/@fullcalendar', fullcalendar);
+
+// Include jQuery from node_modules
+const jquery = express.static(__dirname + '/node_modules/jquery');
+app.use('/jquery', jquery);
+
+
 
 // Middleware to Recognize JSON in Requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // View Engine Setup: Handlebars (extension .hbs)
-app.engine('hbs', exphbs({ extname: 'hbs', defaultLayout: 'main' }));
+app.engine('hbs', exphbs({ extname: 'hbs', defaultLayout: 'main', layoutsDir: __dirname + '/views/layouts' }));
 app.set('view engine', 'hbs');
 
 // Configure Routing from ./routes

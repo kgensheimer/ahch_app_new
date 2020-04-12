@@ -30,8 +30,6 @@ Then, load http://localhost:3000/ in a browser to see the output.
 Files:
 app.js; initializes and runs the server.
 package.json; describes the application and its dependencies.
-bower.json; lists the frontend dependencies for bower to install
-.bowerrc; used to redirect bower components to the public folder during installation in order to load them statically
 
 Folders:
 node_modules/; stores all the dependencies.
@@ -41,7 +39,6 @@ config/; stores all the configuration settings.
 views/; contains the HTML/Habdlebars templates and layouts.
 static/; for static assets such as non-dynamic web pages.
 public/; for public assets (stylesheets, images, JS)
-public/bower_components; for frontend packages installed by Bower
 tasks/; contains any setup scripts like seed.js to seed the database
 ```
 

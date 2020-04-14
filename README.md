@@ -1,6 +1,3 @@
-# ahch_app_new
-Starting from Scratch (Sort of...)
-
 # AHCH Information Management System Web Application
 This project is a Stevens senior design project with the goal of creating a new case and information management system for the staff at Audrey Hepburn Children's House at Hackensack University Medical Center.
 

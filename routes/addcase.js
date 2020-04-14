@@ -3,15 +3,19 @@ const router = express.Router();
 
 // stylesheets sent to layout.hbs
 const stylesheets = [
-  { stylesheet: '/public/stylesheets/simple-sidebar.css' }];
+  { stylesheet: '/public/css/sidebar-menu.css' }];
 
 
 /* GET addcase page */
-router.get('/', function(req, res, next) {
+router.get('/', async (req, res, next) => {
   res.render('addcase', {
     title: 'Add Case',
     stylesheets: stylesheets
   });
+});
+
+router.post('/submitIntake', async (req, res) =>{
+  console.log(req.body);
 });
 
 module.exports = router;

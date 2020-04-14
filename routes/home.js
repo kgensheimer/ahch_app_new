@@ -13,7 +13,7 @@ const stylesheets = [
   { stylesheet: '/@fullcalendar/daygrid/main.min.css' }]
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', async (req, res, next) => {
   res.render('home', {
     title: 'AHCH IMS',
     scripts: scripts,

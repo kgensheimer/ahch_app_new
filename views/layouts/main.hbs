@@ -20,40 +20,24 @@
 <body>
     {{!-- Fixed-top Navbar --}}
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light border-bottom">
-        <a class="navbar-brand" href="/">AHCH</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cases">Cases <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin">Admin <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/addcase">Add Case <span class="sr-only">(current)</span></a>
-                </li>
-                {{!-- Search Bar --}}
-                <form class="form-inline">
-                    <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-
-            </ul>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="main-navbar">
+        <div class="container-fluid"><a class="navbar-brand text-white" href="/">AHCH</a><button data-toggle="collapse"
+                data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link text-white-50" href="/">Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="/cases">Cases</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="/admin">Admin</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link" href="/addcase">Add Case</a></li>
+                </ul>
+                <form class="form-inline"><input type="search" class="bg-light form-control form-control-sm"
+                        name="search" placeholder="Search..." autocomplete="off" /></form>
+            </div>
         </div>
     </nav>
 
-    <div class="d-flex" id="wrapper">
+    <div id="main-content-wrapper">
         {{{body}}}
     </div>
 
@@ -63,6 +47,9 @@
 
     {{!-- Utilities --}}
     <script src='/public/js/utilities.js'></script>
+    <script src='/public/js/scrollFix.js'></script>
+    
+    
 
     {{!-- Custom scripts sent by routers --}}
     {{#each scripts}}

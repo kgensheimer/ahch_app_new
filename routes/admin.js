@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 /* GET admin page */
-router.get('/', function(req, res, next) {
+router.get('/', async (req, res, next) => {
   res.render('admin', {
     title: 'Admin'
   });

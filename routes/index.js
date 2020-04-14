@@ -10,6 +10,8 @@ const constructorMethod = (app) => {
     app.use('/cases', caseRoutes);
     app.use('/admin', adminRoutes);
 
+
+
     app.use('*', (req, res) => {   
         res.status(404).json({ error: 'Not found' });  
     }); 

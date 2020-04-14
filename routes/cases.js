@@ -2,9 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 /* GET cases page */
-router.get('/', async (req, res, next) => {
-  res.render('cases/case', {
-    title: 'Cases',
+router.get('/', function (req, res, next) {
+  res.render('cases/caselist', {
+    title: 'Case List',
+    layout: 'cases'
+  });
+});
+
+router.get('/caseinfo', function (req, res, next) {
+  res.render('cases/caseinfo', {
+    title: 'Case Info',
     layout: 'cases'
   });
 });

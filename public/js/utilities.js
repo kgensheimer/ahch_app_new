@@ -3,4 +3,3 @@ $(document).on('change', '.custom-file-input', (event) => {
     $(this).next('.custom-file-label').html(event.target.files[0].name);
 })
 
-document.getElementById('input-date-today').valueAsDate = new Date();
